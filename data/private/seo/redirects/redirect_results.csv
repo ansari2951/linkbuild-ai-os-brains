@@ -1,0 +1,2 @@
+﻿start_url,final_url,final_status,redirect_count,redirect_types,redirect_chain,loop_detected,error
+https://example.com,https://example.com,200,0,,https://example.com,False,

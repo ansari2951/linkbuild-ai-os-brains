@@ -1,0 +1,14 @@
+﻿email,website,source_url,syntax_valid,domain,mx_found,status,reason,category,website_name,contact_type,outreach_priority,outreach_ready
+contact@thespruce.com,https://www.thespruce.com/,https://www.thespruce.com/about-us-4776800,True,thespruce.com,True,MX_FOUND,,General Contact,thespruce.com,General Contact,Low,Yes
+press@thespruce.com,https://www.thespruce.com/,https://www.thespruce.com/about-us-4776800,True,thespruce.com,True,MX_FOUND,,Press,thespruce.com,Press / PR,Medium,Yes
+advertise@people.inc,https://www.thespruce.com/,https://www.thespruce.com/about-us-4776800,True,people.inc,True,MX_FOUND,,Other,thespruce.com,Other,Review,Review
+bhgeditor@people.inc,https://www.bhg.com/,https://www.bhg.com/about-better-homes-and-gardens-5525299,True,people.inc,True,MX_FOUND,,Other,bhg.com,Editor,High,Yes
+bhg.press@people.inc,https://www.bhg.com/,https://www.bhg.com/about-better-homes-and-gardens-5525299,True,people.inc,True,MX_FOUND,,Press,bhg.com,Press / PR,Medium,Yes
+bobvila@wrightsmedia.com,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,wrightsmedia.com,True,MX_FOUND,,Other,bobvila.com,Other,Review,Review
+legal@recurrent.io,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,recurrent.io,True,MX_FOUND,,Other,bobvila.com,Other,Review,Review
+pr@recurrent.io,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,recurrent.io,True,MX_FOUND,,Press,bobvila.com,Press / PR,Medium,Yes
+contact@bobvila.com,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,bobvila.com,True,MX_FOUND,,General Contact,bobvila.com,General Contact,Low,Yes
+advertising@bobvila.com,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,bobvila.com,True,MX_FOUND,,Advertising,bobvila.com,Advertising,Medium,Yes
+affiliates@recurrent.io,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,recurrent.io,True,MX_FOUND,,Other,bobvila.com,Other,Review,Review
+advertising@trustedmediabrands.com,https://www.familyhandyman.com/,https://www.familyhandyman.com/contact-us/,True,trustedmediabrands.com,True,MX_FOUND,,Advertising,familyhandyman.com,Advertising,Medium,Yes
+customercare@thefamilyhandyman.com,https://www.familyhandyman.com/,https://www.familyhandyman.com/contact-us/,True,thefamilyhandyman.com,True,MX_FOUND,,Other,familyhandyman.com,Other,Review,Review

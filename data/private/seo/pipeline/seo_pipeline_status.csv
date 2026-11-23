@@ -1,0 +1,13 @@
+﻿module,website,status
+Site Audit,https://example.com,COMPLETED
+Website Crawler,https://example.com,COMPLETED
+Image Intelligence,https://example.com,COMPLETED
+Indexing Intelligence,https://example.com,COMPLETED
+Internal Link Analysis,https://example.com,COMPLETED
+Core Web Vitals,https://example.com,COMPLETED
+Redirect Analysis,https://example.com,COMPLETED
+Schema Analysis,https://example.com,COMPLETED
+Keyword Intelligence,,COMPLETED
+Competitor Intelligence,,COMPLETED
+Content Gap Analysis,,COMPLETED
+Keyword Clustering,,COMPLETED

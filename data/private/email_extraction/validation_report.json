@@ -1,0 +1,141 @@
+{
+    "summary": {
+        "total": 13,
+        "mx_found": 13,
+        "invalid": 0,
+        "no_mx": 0,
+        "unknown": 0
+    },
+    "results": [
+        {
+            "email": "contact@thespruce.com",
+            "syntax_valid": true,
+            "domain": "thespruce.com",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.thespruce.com/",
+            "source_url": "https://www.thespruce.com/about-us-4776800"
+        },
+        {
+            "email": "press@thespruce.com",
+            "syntax_valid": true,
+            "domain": "thespruce.com",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.thespruce.com/",
+            "source_url": "https://www.thespruce.com/about-us-4776800"
+        },
+        {
+            "email": "advertise@people.inc",
+            "syntax_valid": true,
+            "domain": "people.inc",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.thespruce.com/",
+            "source_url": "https://www.thespruce.com/about-us-4776800"
+        },
+        {
+            "email": "bhgeditor@people.inc",
+            "syntax_valid": true,
+            "domain": "people.inc",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.bhg.com/",
+            "source_url": "https://www.bhg.com/about-better-homes-and-gardens-5525299"
+        },
+        {
+            "email": "bhg.press@people.inc",
+            "syntax_valid": true,
+            "domain": "people.inc",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.bhg.com/",
+            "source_url": "https://www.bhg.com/about-better-homes-and-gardens-5525299"
+        },
+        {
+            "email": "bobvila@wrightsmedia.com",
+            "syntax_valid": true,
+            "domain": "wrightsmedia.com",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.bobvila.com/",
+            "source_url": "https://www.bobvila.com/contacts/"
+        },
+        {
+            "email": "legal@recurrent.io",
+            "syntax_valid": true,
+            "domain": "recurrent.io",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.bobvila.com/",
+            "source_url": "https://www.bobvila.com/contacts/"
+        },
+        {
+            "email": "pr@recurrent.io",
+            "syntax_valid": true,
+            "domain": "recurrent.io",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.bobvila.com/",
+            "source_url": "https://www.bobvila.com/contacts/"
+        },
+        {
+            "email": "contact@bobvila.com",
+            "syntax_valid": true,
+            "domain": "bobvila.com",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.bobvila.com/",
+            "source_url": "https://www.bobvila.com/contacts/"
+        },
+        {
+            "email": "advertising@bobvila.com",
+            "syntax_valid": true,
+            "domain": "bobvila.com",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.bobvila.com/",
+            "source_url": "https://www.bobvila.com/contacts/"
+        },
+        {
+            "email": "affiliates@recurrent.io",
+            "syntax_valid": true,
+            "domain": "recurrent.io",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.bobvila.com/",
+            "source_url": "https://www.bobvila.com/contacts/"
+        },
+        {
+            "email": "advertising@trustedmediabrands.com",
+            "syntax_valid": true,
+            "domain": "trustedmediabrands.com",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.familyhandyman.com/",
+            "source_url": "https://www.familyhandyman.com/contact-us/"
+        },
+        {
+            "email": "customercare@thefamilyhandyman.com",
+            "syntax_valid": true,
+            "domain": "thefamilyhandyman.com",
+            "mx_found": true,
+            "status": "MX_FOUND",
+            "reason": "",
+            "website": "https://www.familyhandyman.com/",
+            "source_url": "https://www.familyhandyman.com/contact-us/"
+        }
+    ]
+}

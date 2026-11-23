@@ -1,0 +1,67 @@
+[
+    {
+        "email": "contact@thespruce.com",
+        "website": "https://www.thespruce.com/",
+        "source_url": "https://www.thespruce.com/about-us-4776800"
+    },
+    {
+        "email": "press@thespruce.com",
+        "website": "https://www.thespruce.com/",
+        "source_url": "https://www.thespruce.com/about-us-4776800"
+    },
+    {
+        "email": "advertise@people.inc",
+        "website": "https://www.thespruce.com/",
+        "source_url": "https://www.thespruce.com/about-us-4776800"
+    },
+    {
+        "email": "bhgeditor@people.inc",
+        "website": "https://www.bhg.com/",
+        "source_url": "https://www.bhg.com/about-better-homes-and-gardens-5525299"
+    },
+    {
+        "email": "bhg.press@people.inc",
+        "website": "https://www.bhg.com/",
+        "source_url": "https://www.bhg.com/about-better-homes-and-gardens-5525299"
+    },
+    {
+        "email": "bobvila@wrightsmedia.com",
+        "website": "https://www.bobvila.com/",
+        "source_url": "https://www.bobvila.com/contacts/"
+    },
+    {
+        "email": "legal@recurrent.io",
+        "website": "https://www.bobvila.com/",
+        "source_url": "https://www.bobvila.com/contacts/"
+    },
+    {
+        "email": "pr@recurrent.io",
+        "website": "https://www.bobvila.com/",
+        "source_url": "https://www.bobvila.com/contacts/"
+    },
+    {
+        "email": "contact@bobvila.com",
+        "website": "https://www.bobvila.com/",
+        "source_url": "https://www.bobvila.com/contacts/"
+    },
+    {
+        "email": "advertising@bobvila.com",
+        "website": "https://www.bobvila.com/",
+        "source_url": "https://www.bobvila.com/contacts/"
+    },
+    {
+        "email": "affiliates@recurrent.io",
+        "website": "https://www.bobvila.com/",
+        "source_url": "https://www.bobvila.com/contacts/"
+    },
+    {
+        "email": "advertising@trustedmediabrands.com",
+        "website": "https://www.familyhandyman.com/",
+        "source_url": "https://www.familyhandyman.com/contact-us/"
+    },
+    {
+        "email": "customercare@thefamilyhandyman.com",
+        "website": "https://www.familyhandyman.com/",
+        "source_url": "https://www.familyhandyman.com/contact-us/"
+    }
+]

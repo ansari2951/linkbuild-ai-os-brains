@@ -1,0 +1,14 @@
+﻿email,website,source_url,syntax_valid,domain,mx_found,status,reason,category
+contact@thespruce.com,https://www.thespruce.com/,https://www.thespruce.com/about-us-4776800,True,thespruce.com,True,MX_FOUND,,General Contact
+press@thespruce.com,https://www.thespruce.com/,https://www.thespruce.com/about-us-4776800,True,thespruce.com,True,MX_FOUND,,Press
+advertise@people.inc,https://www.thespruce.com/,https://www.thespruce.com/about-us-4776800,True,people.inc,True,MX_FOUND,,Other
+bhgeditor@people.inc,https://www.bhg.com/,https://www.bhg.com/about-better-homes-and-gardens-5525299,True,people.inc,True,MX_FOUND,,Other
+bhg.press@people.inc,https://www.bhg.com/,https://www.bhg.com/about-better-homes-and-gardens-5525299,True,people.inc,True,MX_FOUND,,Press
+bobvila@wrightsmedia.com,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,wrightsmedia.com,True,MX_FOUND,,Other
+legal@recurrent.io,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,recurrent.io,True,MX_FOUND,,Other
+pr@recurrent.io,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,recurrent.io,True,MX_FOUND,,Press
+contact@bobvila.com,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,bobvila.com,True,MX_FOUND,,General Contact
+advertising@bobvila.com,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,bobvila.com,True,MX_FOUND,,Advertising
+affiliates@recurrent.io,https://www.bobvila.com/,https://www.bobvila.com/contacts/,True,recurrent.io,True,MX_FOUND,,Other
+advertising@trustedmediabrands.com,https://www.familyhandyman.com/,https://www.familyhandyman.com/contact-us/,True,trustedmediabrands.com,True,MX_FOUND,,Advertising
+customercare@thefamilyhandyman.com,https://www.familyhandyman.com/,https://www.familyhandyman.com/contact-us/,True,thefamilyhandyman.com,True,MX_FOUND,,Other

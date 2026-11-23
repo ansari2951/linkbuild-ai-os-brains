@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+dnspython
+email-validator
+streamlit
+pandas
+python-dotenv
+openai
+anthropic
+google-genai

@@ -1,0 +1,38 @@
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases & runtime binaries
+*.db
+*.sqlite3
+*.sqlite
+
+# Logs & temp
+*.log
+.pytest_cache/
+.coverage
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Vercel & Node
+.vercel/
+node_modules/
+dist/
+build/

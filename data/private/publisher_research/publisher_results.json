@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.thespruce.com/",
+    "status": "inspected",
+    "http_status": 200,
+    "title": "The Spruce: Make Your Best Home",
+    "description": "Browse beautiful home design ideas and useful how-tos to make your best home. Our expert advice makes creating the home you’ve always wanted easy and fun.",
+    "relevance_score": 100,
+    "contact_pages": [
+      "https://www.thespruce.com/about-us-4776800",
+      "https://www.thespruce.com/about-us-4776800#toc-our-team",
+      "https://www.thespruce.com/about-us-4776800#toc-editorial-guidelines",
+      "https://www.thespruce.com/about-us-4776800#toc-contact-us"
+    ],
+    "public_emails": [],
+    "error": ""
+  },
+  {
+    "url": "https://www.bhg.com/",
+    "status": "inspected",
+    "http_status": 200,
+    "title": "Better Homes & Gardens: Fresh Takes on Home, Garden & Food",
+    "description": "BHG is your go-to destination for home decor advice, DIY projects, gardening, cleaning tips, and recipes. We’ve been inspiring readers for over 100 years.",
+    "relevance_score": 100,
+    "contact_pages": [
+      "https://www.bhg.com/about-better-homes-and-gardens-5525299#toc-contact-us",
+      "https://www.bhg.com/about-better-homes-and-gardens-5525299"
+    ],
+    "public_emails": [],
+    "error": ""
+  },
+  {
+    "url": "https://www.bobvila.com/",
+    "status": "inspected",
+    "http_status": 200,
+    "title": "Bob Vila - Home Improvement, Home Repair, & Home Renovation",
+    "description": "Inspirational ideas and expert advice from Bob Vila, the most trusted name in home improvement, home renovation, home repair, and DIY.",
+    "relevance_score": 100,
+    "contact_pages": [
+      "https://www.bobvila.com/about/",
+      "https://www.bobvila.com/contacts/",
+      "https://www.bobvila.com/advertise-with-us/",
+      "https://www.bobvila.com/about-bob/"
+    ],
+    "public_emails": [],
+    "error": ""
+  },
+  {
+    "url": "https://www.familyhandyman.com/",
+    "status": "inspected",
+    "http_status": 200,
+    "title": "The Family Handyman | Do it Yourself Home Improvement: Home Repair",
+    "description": "Family Handyman: your leading DIY resource for projects, renovations, smart technology, pest control, maintenance, design inspiration and so much more.",
+    "relevance_score": 100,
+    "contact_pages": [
+      "https://www.familyhandyman.com/about-the-family-handyman/",
+      "https://www.familyhandyman.com/contact-us/"
+    ],
+    "public_emails": [],
+    "error": ""
+  },
+  {
+    "url": "https://www.thisoldhouse.com/",
+    "status": "inspected",
+    "http_status": 200,
+    "title": "Home Improvement and Remodeling  - This Old House Play Play Play Play Play",
+    "description": "How-to and DIY expert advice from America's most trusted home improvement brand.",
+    "relevance_score": 100,
+    "contact_pages": [
+      "https://www.thisoldhouse.com/this-old-house/about-this-old-house",
+      "https://www.thisoldhouse.com/pages/contact-us",
+      "https://www.thisoldhouse.com/windows/all-about-storm",
+      "https://www.thisoldhouse.com/pages/about"
+    ],
+    "public_emails": [],
+    "error": ""
+  }
+]

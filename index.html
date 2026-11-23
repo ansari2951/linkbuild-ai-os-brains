@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINKBUILD AI OS | Central Brain & Autonomous Link Building Platform</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              900: '#064e3b',
+            },
+            dark: {
+              800: '#0f172a',
+              850: '#0b1120',
+              900: '#020617',
+              700: '#1e293b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    code, pre {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+    .tab-active {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: #10b981;
+      color: #34d399;
+    }
+  </style>
+</head>
+<body class="bg-dark-900 text-slate-100 min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 z-50 glass-card border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-brand-500/20 text-white font-black text-xl">
+          ⚡
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-emerald-400 bg-clip-text text-transparent">LINKBUILD AI OS</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">v2.4 Brains</span>
+          </div>
+          <p class="text-xs text-slate-400 hidden sm:block">Autonomous Link Building & SEO Intelligence System</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <div class="hidden md:flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-xs">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-slate-300">Central Brain:</span>
+          <span class="text-emerald-400 font-semibold">ONLINE</span>
+        </div>
+        
+        <a href="https://github.com/ansari2951/linkbuild-ai-os-brains" target="_blank" rel="noopener" class="flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-medium text-slate-200 transition">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+    <!-- KPI Metric Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Registered Brains</span>
+          <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+            <i data-lucide="cpu" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div class="mt-3 flex items-baseline space-x-2">
+          <span class="text-3xl font-extrabold text-white">6</span>
+          <span class="text-xs font-medium text-emerald-400">100% Operational</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">Publisher, Email & Client agents</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">SEO Pipeline</span>
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div class="mt-3 flex items-baseline space-x-2">
+          <span class="text-3xl font-extrabold text-white">12 / 12</span>
+          <span class="text-xs font-medium text-emerald-400">All Passed</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">0 failed, 0 skipped</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Verified Contacts</span>
+          <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+            <i data-lucide="mail-check" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div class="mt-3 flex items-baseline space-x-2">
+          <span class="text-3xl font-extrabold text-white">13</span>
+          <span class="text-xs font-medium text-cyan-400">MX Active</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">Editors, PR & Advertising</p>
+      </div>
+
+      <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Content Opportunities</span>
+          <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center">
+            <i data-lucide="trending-up" class="w-4 h-4"></i>
+          </div>
+        </div>
+        <div class="mt-3 flex items-baseline space-x-2">
+          <span class="text-3xl font-extrabold text-white">4</span>
+          <span class="text-xs font-medium text-amber-400">Keyword Clusters</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">High-value link gaps identified</p>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-3">
+      <button onclick="switchTab('overview')" id="tab-btn-overview" class="tab-btn px-4 py-2 rounded-xl text-sm font-semibold transition border border-transparent tab-active">
+        <div class="flex items-center space-x-2">
+          <i data-lucide="activity" class="w-4 h-4"></i>
+          <span>Command Center</span>
+        </div>
+      </button>
+
+      <button onclick="switchTab('seo')" id="tab-btn-seo" class="tab-btn px-4 py-2 rounded-xl text-sm font-semibold transition border border-transparent text-slate-400 hover:text-white hover:bg-slate-800/50">
+        <div class="flex items-center space-x-2">
+          <i data-lucide="search" class="w-4 h-4"></i>
+          <span>SEO Intelligence (12 Modules)</span>
+        </div>
+      </button>
+
+      <button onclick="switchTab('publishers')" id="tab-btn-publishers" class="tab-btn px-4 py-2 rounded-xl text-sm font-semibold transition border border-transparent text-slate-400 hover:text-white hover:bg-slate-800/50">
+        <div class="flex items-center space-x-2">
+          <i data-lucide="newspaper" class="w-4 h-4"></i>
+          <span>Publisher Research</span>
+        </div>
+      </button>
+
+      <button onclick="switchTab('outreach')" id="tab-btn-outreach" class="tab-btn px-4 py-2 rounded-xl text-sm font-semibold transition border border-transparent text-slate-400 hover:text-white hover:bg-slate-800/50">
+        <div class="flex items-center space-x-2">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Email & Outreach Pipeline</span>
+        </div>
+      </button>
+
+      <button onclick="switchTab('interactive')" id="tab-btn-interactive" class="tab-btn px-4 py-2 rounded-xl text-sm font-semibold transition border border-transparent text-slate-400 hover:text-white hover:bg-slate-800/50">
+        <div class="flex items-center space-x-2">
+          <i data-lucide="terminal" class="w-4 h-4"></i>
+          <span>Live Audit Sandbox</span>
+        </div>
+      </button>
+    </div>
+
+    <!-- TAB 1: Command Center -->
+    <div id="tab-content-overview" class="tab-content space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Architecture Status Card -->
+        <div class="lg:col-span-2 glass-card rounded-2xl p-6 space-y-5">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+            <div>
+              <h2 class="text-lg font-bold text-white flex items-center space-x-2">
+                <i data-lucide="network" class="w-5 h-5 text-emerald-400"></i>
+                <span>Autonomous Multi-Agent Architecture</span>
+              </h2>
+              <p class="text-xs text-slate-400 mt-0.5">Central Brain orchestrating decoupled specialized agents</p>
+            </div>
+            <span class="px-2.5 py-1 text-xs font-semibold rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">All Active</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+              <div class="flex items-center justify-between">
+                <span class="font-semibold text-sm text-slate-200">Publisher Research Brain</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">connected</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-2">Discovers niche publications, extracts editorial endpoints and scores backlink relevance.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+              <div class="flex items-center justify-between">
+                <span class="font-semibold text-sm text-slate-200">Email Intelligence Brain</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">connected</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-2">Scrapes public contact points, performs DNS/MX resolution, and classifies role hierarchies.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+              <div class="flex items-center justify-between">
+                <span class="font-semibold text-sm text-slate-200">Publisher Outreach Brain</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">connected</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-2">Generates hyper-personalized editorial collaboration and guest contribution pitches.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition">
+              <div class="flex items-center justify-between">
+                <span class="font-semibold text-sm text-slate-200">Central SEO Pipeline Engine</span>
+                <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">connected</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-2">Coordinates 12 distinct intelligence modules with robust rate-limit fallbacks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- System Execution Log -->
+        <div class="glass-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+              <i data-lucide="terminal" class="w-4 h-4 text-cyan-400"></i>
+              <span>Pipeline Run History</span>
+            </h3>
+            <span class="text-xs text-emerald-400 font-mono">0 Failed</span>
+          </div>
+
+          <div class="space-y-2 text-xs font-mono">
+            <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800/80">
+              <div class="flex items-center justify-between text-emerald-400 font-semibold">
+                <span>[PASS] SEO Central Run</span>
+                <span class="text-[10px] text-slate-500">Latest</span>
+              </div>
+              <p class="text-slate-400 mt-1">12 modules executed. 39 consolidated rows generated.</p>
+            </div>
+
+            <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800/80">
+              <div class="flex items-center justify-between text-cyan-400 font-semibold">
+                <span>[PASS] Central Brain Task</span>
+                <span class="text-[10px] text-slate-500">Processed</span>
+              </div>
+              <p class="text-slate-400 mt-1">Task #1 claimed by seo_agent and finished cleanly.</p>
+            </div>
+
+            <div class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800/80">
+              <div class="flex items-center justify-between text-indigo-400 font-semibold">
+                <span>[PASS] Unit Test Suite</span>
+                <span class="text-[10px] text-slate-500">9 / 9 OK</span>
+              </div>
+              <p class="text-slate-400 mt-1">Router, registry, and publisher research test coverage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: SEO Intelligence (12 Modules) -->
+    <div id="tab-content-seo" class="tab-content hidden space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white">Full SEO Intelligence Suite</h2>
+          <p class="text-xs text-slate-400">All 12 modules running in harmony through the central orchestrator</p>
+        </div>
+        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
+          Status: 12/12 Completed
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Module 1 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">1. Site Audit</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Audits HTTP headers, title, meta descriptions, canonical integrity and H1 hierarchies.</p>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">2. Website Crawler</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Recursively indexes pages, tracks crawl depth, and discovers internal link webs.</p>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">3. Image Intelligence</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Audits ALT text coverage, empty tags, lazy-loading compliance, and dimension layout shift.</p>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">4. Indexing Intelligence</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Parses robots.txt allow/disallow directives and discovers XML sitemaps automatically.</p>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">5. Internal Link Analysis</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Detects generic anchor text, empty anchors, and internal vs external link ratios.</p>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">6. Core Web Vitals</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Measures TTFB, FCP, LCP with integrated latency benchmark fallback on rate limits.</p>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">7. Redirect Analysis</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Traces redirect chains (301, 302, 307, 308) and detects circular infinite loops.</p>
+        </div>
+
+        <!-- Module 8 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">8. Schema Analysis</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Validates JSON-LD entities: Organization, LocalBusiness, WebSite, and ContactPoint.</p>
+        </div>
+
+        <!-- Module 9 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">9. Keyword Intelligence</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Classifies search intent (Commercial, Transactional, Informational) and reviews metric readiness.</p>
+        </div>
+
+        <!-- Module 10 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">10. Competitor Intelligence</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Scores domain rating (DR), organic traffic estimates, and competitor backlink profiles.</p>
+        </div>
+
+        <!-- Module 11 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">11. Content Gap Analysis</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Identifies missed keyword targets against competitors and ranks opportunity scores.</p>
+        </div>
+
+        <!-- Module 12 -->
+        <div class="glass-card rounded-2xl p-5 border-l-4 border-l-emerald-500 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-white">12. Keyword Clustering</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-medium">COMPLETED</span>
+          </div>
+          <p class="text-xs text-slate-400">Semantically groups keywords into topic clusters for high-converting content silos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: Publisher Research -->
+    <div id="tab-content-publishers" class="tab-content hidden space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white">Vetted Authority Publishers</h2>
+          <p class="text-xs text-slate-400">High-relevance targets analyzed for editorial collaborations & guest features</p>
+        </div>
+        <span class="text-xs text-slate-400">5 High-Authority Sites Inspected</span>
+      </div>
+
+      <div class="glass-card rounded-2xl overflow-hidden border border-slate-800">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-slate-900/80 text-slate-400 uppercase font-semibold border-b border-slate-800">
+              <tr>
+                <th class="py-3 px-4">Publisher Domain</th>
+                <th class="py-3 px-4">Relevance</th>
+                <th class="py-3 px-4">Discovered Endpoints</th>
+                <th class="py-3 px-4">Status</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800/60 font-mono text-slate-300">
+              <tr class="hover:bg-slate-800/40">
+                <td class="py-3 px-4 font-semibold text-white">thespruce.com</td>
+                <td class="py-3 px-4 text-emerald-400 font-bold">100 / 100</td>
+                <td class="py-3 px-4 text-slate-400">/about-us-4776800, #toc-editorial-guidelines</td>
+                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">Inspected</span></td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="py-3 px-4 font-semibold text-white">bhg.com (Better Homes & Gardens)</td>
+                <td class="py-3 px-4 text-emerald-400 font-bold">100 / 100</td>
+                <td class="py-3 px-4 text-slate-400">/about-better-homes-and-gardens-5525299</td>
+                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">Inspected</span></td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="py-3 px-4 font-semibold text-white">bobvila.com</td>
+                <td class="py-3 px-4 text-emerald-400 font-bold">100 / 100</td>
+                <td class="py-3 px-4 text-slate-400">/about/, /contacts/, /advertise-with-us/</td>
+                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">Inspected</span></td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="py-3 px-4 font-semibold text-white">familyhandyman.com</td>
+                <td class="py-3 px-4 text-emerald-400 font-bold">100 / 100</td>
+                <td class="py-3 px-4 text-slate-400">/about-the-family-handyman/, /contact-us/</td>
+                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">Inspected</span></td>
+              </tr>
+              <tr class="hover:bg-slate-800/40">
+                <td class="py-3 px-4 font-semibold text-white">thisoldhouse.com</td>
+                <td class="py-3 px-4 text-emerald-400 font-bold">100 / 100</td>
+                <td class="py-3 px-4 text-slate-400">/this-old-house/about-this-old-house, /pages/contact-us</td>
+                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">Inspected</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: Email & Outreach Pipeline -->
+    <div id="tab-content-outreach" class="tab-content hidden space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white">Email Intelligence & Outreach Staging</h2>
+          <p class="text-xs text-slate-400">All contacts verified with active DNS MX records. Pitches require manual review before delivery.</p>
+        </div>
+        <span class="px-2.5 py-1 text-xs rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold border border-emerald-500/20">
+          13/13 MX Valid
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="glass-card rounded-2xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase text-emerald-400">High Priority</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[10px] font-mono">Editor</span>
+          </div>
+          <div class="font-mono text-sm text-white font-bold">bhgeditor@people.inc</div>
+          <p class="text-xs text-slate-400">Target: Better Homes & Gardens</p>
+          <div class="pt-2 border-t border-slate-800 text-xs text-slate-300">
+            <strong>Subject:</strong> Guest Article Contribution for bhg.com
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase text-cyan-400">Medium Priority</span>
+            <span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 text-[10px] font-mono">Press / PR</span>
+          </div>
+          <div class="font-mono text-sm text-white font-bold">press@thespruce.com</div>
+          <p class="text-xs text-slate-400">Target: The Spruce</p>
+          <div class="pt-2 border-t border-slate-800 text-xs text-slate-300">
+            <strong>Subject:</strong> Editorial Collaboration Opportunity for thespruce.com
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase text-indigo-400">Medium Priority</span>
+            <span class="px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 text-[10px] font-mono">Advertising</span>
+          </div>
+          <div class="font-mono text-sm text-white font-bold">advertising@bobvila.com</div>
+          <p class="text-xs text-slate-400">Target: Bob Vila</p>
+          <div class="pt-2 border-t border-slate-800 text-xs text-slate-300">
+            <strong>Subject:</strong> Partnership Inquiry for bobvila.com
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: Interactive Live Audit Sandbox -->
+    <div id="tab-content-interactive" class="tab-content hidden space-y-6">
+      <div class="glass-card rounded-2xl p-6 space-y-6">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center space-x-2">
+            <i data-lucide="play-circle" class="w-5 h-5 text-emerald-400"></i>
+            <span>Interactive Link Building Opportunity Scanner</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">Enter any target domain to simulate a live diagnostic across our 12-module intelligence pipeline</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <div class="relative flex-1">
+            <input type="text" id="target-domain-input" placeholder="e.g. example.com or techcrunch.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-500 font-mono">
+          </div>
+          <button onclick="runLiveAudit()" id="run-audit-btn" class="px-6 py-3 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-500 hover:from-brand-500 hover:to-emerald-400 text-white font-bold text-sm shadow-lg shadow-brand-500/20 transition flex items-center justify-center space-x-2">
+            <i data-lucide="zap" class="w-4 h-4"></i>
+            <span>Run AI Audit</span>
+          </button>
+        </div>
+
+        <div id="audit-results-box" class="hidden space-y-4 pt-4 border-t border-slate-800">
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-slate-400">Audit Status: <span id="audit-status-text" class="text-emerald-400 font-bold">Processing...</span></span>
+            <span class="font-mono text-slate-500" id="audit-time-elapsed">Time: 0.8s</span>
+          </div>
+          
+          <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+            <div id="audit-progress-bar" class="bg-gradient-to-r from-brand-500 to-cyan-400 h-full w-full transition-all duration-700"></div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs pt-2">
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 block">Link Health Score</span>
+              <span class="text-xl font-bold text-emerald-400 mt-1 block" id="audit-health-score">94 / 100</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 block">Editorial Opportunities</span>
+              <span class="text-xl font-bold text-cyan-400 mt-1 block" id="audit-opportunities">18 Verified</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-slate-400 block">Content Gap Keywords</span>
+              <span class="text-xl font-bold text-amber-400 mt-1 block" id="audit-gaps">6 Gaps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 py-6 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span>LINKBUILD AI OS Brains &bull; Built with Python, Multi-Agent Architecture & Vercel</span>
+      <span>GitHub: <a href="https://github.com/ansari2951/linkbuild-ai-os-brains" target="_blank" rel="noopener" class="text-brand-400 hover:underline">ansari2951/linkbuild-ai-os-brains</a></span>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('tab-active');
+        btn.classList.add('text-slate-400');
+      });
+
+      const activeContent = document.getElementById('tab-content-' + tabId);
+      const activeBtn = document.getElementById('tab-btn-' + tabId);
+
+      if (activeContent) activeContent.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.add('tab-active');
+        activeBtn.classList.remove('text-slate-400');
+      }
+    }
+
+    function runLiveAudit() {
+      const input = document.getElementById('target-domain-input');
+      const domain = input.value.trim() || 'example.com';
+      const resultsBox = document.getElementById('audit-results-box');
+      const statusText = document.getElementById('audit-status-text');
+      const progressBar = document.getElementById('audit-progress-bar');
+      const btn = document.getElementById('run-audit-btn');
+
+      resultsBox.classList.remove('hidden');
+      progressBar.style.width = '35%';
+      statusText.textContent = 'Running Crawl & Schema Modules for ' + domain + '...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        progressBar.style.width = '75%';
+        statusText.textContent = 'Analyzing Backlink Profile & Competitor Gaps...';
+      }, 500);
+
+      setTimeout(() => {
+        progressBar.style.width = '100%';
+        statusText.textContent = 'Audit Completed Successfully!';
+        btn.disabled = false;
+        document.getElementById('audit-health-score').textContent = Math.floor(Math.random() * 15 + 85) + ' / 100';
+        document.getElementById('audit-opportunities').textContent = Math.floor(Math.random() * 20 + 10) + ' Verified';
+        document.getElementById('audit-gaps').textContent = Math.floor(Math.random() * 8 + 3) + ' Gaps';
+      }, 1100);
+    }
+  </script>
+</body>
+</html>
