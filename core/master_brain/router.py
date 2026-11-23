@@ -7,7 +7,7 @@
         "publisher email", "contact publisher", "publisher outreach"
     ],
     "publisher_deals": [
-        "negotiate", "publisher deal", "publisher price"
+        "negotiate", "negotiation", "publisher deal", "publisher price", "deals"
     ],
     "client_research": [
         "find client", "find lead", "client research",

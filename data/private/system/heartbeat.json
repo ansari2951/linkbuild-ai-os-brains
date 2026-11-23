@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-11-23T14:17:48.206056+00:00",
+  "status": "STOPPED",
+  "pid": 20080,
+  "stats": {
+    "final_cycle": 2
+  }
+}

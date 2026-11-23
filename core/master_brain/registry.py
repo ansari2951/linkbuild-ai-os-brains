@@ -17,7 +17,7 @@ AGENTS = {
             "publisher emails",
             "publisher outreach"
         ],
-        "status": "registered"
+        "status": "connected"
     },
     "publisher_deals": {
         "name": "Publisher Deal Brain",
@@ -26,7 +26,7 @@ AGENTS = {
             "negotiation",
             "publisher deals"
         ],
-        "status": "registered"
+        "status": "connected"
     },
     "client_research": {
         "name": "Client Research Brain",
@@ -35,7 +35,7 @@ AGENTS = {
             "find clients",
             "lead research"
         ],
-        "status": "registered"
+        "status": "connected"
     },
     "client_outreach": {
         "name": "Client Outreach Brain",
@@ -44,7 +44,7 @@ AGENTS = {
             "client emails",
             "cold outreach"
         ],
-        "status": "registered"
+        "status": "connected"
     },
     "email_intelligence": {
         "name": "Email Intelligence Brain",
@@ -53,7 +53,7 @@ AGENTS = {
             "email replies",
             "inbox analysis"
         ],
-        "status": "registered"
+        "status": "connected"
     }
 }
 
