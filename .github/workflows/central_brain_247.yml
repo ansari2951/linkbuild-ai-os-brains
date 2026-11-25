@@ -86,12 +86,15 @@ jobs:
             git push origin main
           fi
 
-      - name: Trigger Optional Vercel Production Redeploy (Hook)
-        if: ${{ secrets.VERCEL_DEPLOY_HOOK_URL != '' }}
+      - name: Trigger Optional Vercel Production Redeploy
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
-          curl -fsSL -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
-
-      - name: Trigger Optional Vercel Production Redeploy (CLI Token)
-        if: ${{ secrets.VERCEL_TOKEN != '' }}
-        run: |
-          npx --yes vercel deploy ./public --prod --yes --token="${{ secrets.VERCEL_TOKEN }}"
+          if [ -n "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            curl -fsSL -X POST "$VERCEL_DEPLOY_HOOK_URL"
+          elif [ -n "$VERCEL_TOKEN" ]; then
+            npx --yes vercel deploy ./public --prod --yes --token="$VERCEL_TOKEN"
+          else
+            echo "No Vercel deploy hook or token secret set; skipping Vercel trigger."
+          fi
