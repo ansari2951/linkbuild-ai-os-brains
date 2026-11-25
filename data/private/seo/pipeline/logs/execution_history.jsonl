@@ -1,3 +1,6 @@
 {"run_id": "3fb60ac6-1ad7-4bfb-b96c-ddd424ce62c7", "event": "PIPELINE_STARTED", "status": "RUNNING", "started_at": "2026-11-23T18:13:41"}
 {"run_id": "3fb60ac6-1ad7-4bfb-b96c-ddd424ce62c7", "event": "PIPELINE_COMPLETED", "details": {"websites": ["https://example.com"], "completed": 12, "failed": 0}, "timestamp": "2026-11-23T18:14:02"}
 {"run_id": "3fb60ac6-1ad7-4bfb-b96c-ddd424ce62c7", "event": "PIPELINE_FINISHED", "status": "COMPLETED", "summary": {"websites": ["https://example.com"], "completed": 12, "failed": 0}, "finished_at": "2026-11-23T18:14:02"}
+{"run_id": "09b31975-af08-4918-a631-eba2851975ec", "event": "PIPELINE_STARTED", "status": "RUNNING", "started_at": "2026-11-25T19:10:14"}
+{"run_id": "09b31975-af08-4918-a631-eba2851975ec", "event": "PIPELINE_COMPLETED", "details": {"websites": ["https://example.com"], "completed": 12, "failed": 0}, "timestamp": "2026-11-25T19:10:17"}
+{"run_id": "09b31975-af08-4918-a631-eba2851975ec", "event": "PIPELINE_FINISHED", "status": "COMPLETED", "summary": {"websites": ["https://example.com"], "completed": 12, "failed": 0}, "finished_at": "2026-11-25T19:10:17"}
