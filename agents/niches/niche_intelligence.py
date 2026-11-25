@@ -100,12 +100,14 @@ class NicheIntelligence:
             except (json.JSONDecodeError, OSError):
                 pass
 
-        self._save(DEFAULT_NICHES)
-        return DEFAULT_NICHES.copy()
+        self.niches = DEFAULT_NICHES.copy()
+        self._save()
+        return self.niches
 
-    def _save(self):
+    def _save(self, data=None):
+        payload = data if data is not None else self.niches
         with open(NICHE_FILE, "w", encoding="utf-8") as file:
-            json.dump(self.niches, file, indent=4)
+            json.dump(payload, file, indent=4)
 
     def get_all_niches(self):
         return self.niches

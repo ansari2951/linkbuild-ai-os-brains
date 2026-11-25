@@ -68,9 +68,9 @@
         <div>
           <div class="flex items-center space-x-2">
             <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-emerald-400 bg-clip-text text-transparent">LINKBUILD AI OS</span>
-            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">v2.5 Autonomous 24/7</span>
+            <span id="app-version-badge" class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">v2.6 Cloud 24/7</span>
           </div>
-          <p class="text-xs text-slate-400 hidden sm:block">Autonomous Link Building, SEO Intelligence & 24/7 Background Daemon</p>
+          <p class="text-xs text-slate-400 hidden sm:block">Autonomous Link Building, SEO Intelligence & 24/7 Cloud Automation</p>
         </div>
       </div>
 
@@ -78,7 +78,8 @@
         <div class="hidden md:flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-xs">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
           <span class="text-slate-300">Central Brain:</span>
-          <span class="text-emerald-400 font-semibold">24/7 ACTIVE</span>
+          <span id="heartbeat-status-label" class="text-emerald-400 font-semibold">24/7 ACTIVE</span>
+          <span id="last-sync-badge" class="text-slate-500 hidden lg:inline"></span>
         </div>
         
         <a href="https://github.com/ansari2951/linkbuild-ai-os-brains" target="_blank" rel="noopener" class="flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-medium text-slate-200 transition">
@@ -102,10 +103,10 @@
           </div>
         </div>
         <div class="mt-3 flex items-baseline space-x-2">
-          <span class="text-3xl font-extrabold text-white">6</span>
-          <span class="text-xs font-medium text-emerald-400">100% Operational</span>
+          <span id="kpi-brains-count" class="text-3xl font-extrabold text-white">6</span>
+          <span id="kpi-brains-sub" class="text-xs font-medium text-emerald-400">100% Operational</span>
         </div>
-        <p class="text-xs text-slate-400 mt-1">Publisher, Email & Client agents</p>
+        <p id="kpi-scripts-sub" class="text-xs text-slate-400 mt-1">13/13 agent modules active</p>
       </div>
 
       <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
@@ -116,10 +117,10 @@
           </div>
         </div>
         <div class="mt-3 flex items-baseline space-x-2">
-          <span class="text-3xl font-extrabold text-white">12 / 12</span>
-          <span class="text-xs font-medium text-emerald-400">All Passed</span>
+          <span id="kpi-seo-count" class="text-3xl font-extrabold text-white">12 / 12</span>
+          <span id="kpi-seo-sub" class="text-xs font-medium text-emerald-400">All Passed</span>
         </div>
-        <p class="text-xs text-slate-400 mt-1">0 failed, 0 skipped</p>
+        <p id="kpi-seo-fail" class="text-xs text-slate-400 mt-1">0 failed, 0 skipped</p>
       </div>
 
       <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
@@ -130,10 +131,10 @@
           </div>
         </div>
         <div class="mt-3 flex items-baseline space-x-2">
-          <span class="text-3xl font-extrabold text-white">13</span>
+          <span id="kpi-contacts-count" class="text-3xl font-extrabold text-white">13</span>
           <span class="text-xs font-medium text-cyan-400">MX Active</span>
         </div>
-        <p class="text-xs text-slate-400 mt-1">Editors, PR & Advertising</p>
+        <p id="kpi-drafts-sub" class="text-xs text-slate-400 mt-1">6 drafts • 6 personalized</p>
       </div>
 
       <div class="glass-card rounded-2xl p-5 relative overflow-hidden">
@@ -144,10 +145,10 @@
           </div>
         </div>
         <div class="mt-3 flex items-baseline space-x-2">
-          <span class="text-3xl font-extrabold text-white">4</span>
+          <span id="kpi-clusters-count" class="text-3xl font-extrabold text-white">4</span>
           <span class="text-xs font-medium text-amber-400">Keyword Clusters</span>
         </div>
-        <p class="text-xs text-slate-400 mt-1">High-value link gaps identified</p>
+        <p id="kpi-crm-sub" class="text-xs text-slate-400 mt-1">5 CRM publishers • 3 prospects</p>
       </div>
     </div>
 
@@ -424,7 +425,7 @@
                 <th class="py-3 px-4">Status</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-slate-800/60 font-mono text-slate-300">
+            <tbody id="publishers-table-body" class="divide-y divide-slate-800/60 font-mono text-slate-300">
               <tr class="hover:bg-slate-800/40">
                 <td class="py-3 px-4 font-semibold text-white">thespruce.com</td>
                 <td class="py-3 px-4 text-emerald-400 font-bold">100 / 100</td>
@@ -473,7 +474,7 @@
         </span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div id="outreach-cards-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="glass-card rounded-2xl p-5 space-y-3">
           <div class="flex items-center justify-between">
             <span class="text-xs font-semibold uppercase text-emerald-400">High Priority</span>
@@ -611,13 +612,85 @@
 
       setTimeout(() => {
         progressBar.style.width = '100%';
-        statusText.textContent = 'Audit Completed Successfully!';
+        statusText.textContent = 'Sandbox Preview Complete (Run CLI `python run_seo_pipeline.py` for live crawl)';
         btn.disabled = false;
         document.getElementById('audit-health-score').textContent = Math.floor(Math.random() * 15 + 85) + ' / 100';
         document.getElementById('audit-opportunities').textContent = Math.floor(Math.random() * 20 + 10) + ' Verified';
         document.getElementById('audit-gaps').textContent = Math.floor(Math.random() * 8 + 3) + ' Gaps';
       }, 1100);
     }
+
+    async function loadLiveDashboardData() {
+      try {
+        const resp = await fetch('./dashboard-data.json?t=' + Date.now());
+        if (!resp.ok) return;
+        const data = await resp.json();
+
+        if (data.system) {
+          document.getElementById('app-version-badge').textContent = 'v' + (data.system.version || '2.6 Cloud 24/7');
+          document.getElementById('kpi-brains-count').textContent = data.system.connected_brains ?? 6;
+          document.getElementById('kpi-scripts-sub').textContent =
+            `${data.system.central_brain_available_scripts ?? 13}/${data.system.central_brain_total_scripts ?? 13} agent scripts available`;
+          if (data.system.heartbeat && data.system.heartbeat.status) {
+            document.getElementById('heartbeat-status-label').textContent = '24/7 ' + data.system.heartbeat.status;
+          }
+        }
+
+        if (data.generated_at) {
+          const dt = new Date(data.generated_at);
+          if (!isNaN(dt.getTime())) {
+            document.getElementById('last-sync-badge').textContent = '• Synced ' + dt.toLocaleString();
+          }
+        }
+
+        if (data.metrics) {
+          const m = data.metrics;
+          document.getElementById('kpi-seo-count').textContent = `${m.seo_completed ?? 12} / ${m.seo_total ?? 12}`;
+          document.getElementById('kpi-seo-fail').textContent = `${m.seo_failed ?? 0} failed • ${m.backlinks_checked ?? 0} backlinks checked`;
+          document.getElementById('kpi-contacts-count').textContent = m.verified_emails ?? 13;
+          document.getElementById('kpi-drafts-sub').textContent = `${m.outreach_drafts ?? 6} drafts • ${m.personalized_drafts ?? 0} personalized`;
+          document.getElementById('kpi-clusters-count').textContent = m.keyword_clusters ?? 4;
+          document.getElementById('kpi-crm-sub').textContent = `${m.crm_publishers ?? 0} CRM publishers • ${m.client_prospects ?? 0} prospects`;
+        }
+
+        if (Array.isArray(data.publishers) && data.publishers.length > 0) {
+          const tbody = document.getElementById('publishers-table-body');
+          tbody.innerHTML = data.publishers.map(p => {
+            const host = (p.url || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+            const endpoints = (p.contact_pages || []).map(u => u.replace(/^https?:\/\/[^/]+/, '') || '/').join(', ') || '/';
+            return `<tr class="hover:bg-slate-800/40">
+              <td class="py-3 px-4 font-semibold text-white">${host}</td>
+              <td class="py-3 px-4 text-emerald-400 font-bold">${p.relevance_score ?? 0} / 100</td>
+              <td class="py-3 px-4 text-slate-400">${endpoints}</td>
+              <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">${p.status || 'inspected'}</span></td>
+            </tr>`;
+          }).join('');
+        }
+
+        if (Array.isArray(data.outreach_highlights) && data.outreach_highlights.length > 0) {
+          const grid = document.getElementById('outreach-cards-grid');
+          grid.innerHTML = data.outreach_highlights.slice(0, 6).map(d => {
+            const isHigh = (d.priority || '').toLowerCase() === 'high';
+            const color = isHigh ? 'emerald' : 'cyan';
+            return `<div class="glass-card rounded-2xl p-5 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-semibold uppercase text-${color}-400">${d.priority || 'Medium'} Priority</span>
+                <span class="px-2 py-0.5 rounded bg-${color}-500/20 text-${color}-300 text-[10px] font-mono">${d.contact_type || 'Outreach'}</span>
+              </div>
+              <div class="font-mono text-sm text-white font-bold">${d.email}</div>
+              <p class="text-xs text-slate-400">Target: ${d.website} (${d.approval_status})</p>
+              <div class="pt-2 border-t border-slate-800 text-xs text-slate-300">
+                <strong>Subject:</strong> ${d.subject}
+              </div>
+            </div>`;
+          }).join('');
+        }
+      } catch (e) {
+        // Fallback to static server-rendered state if dashboard-data.json is unavailable
+      }
+    }
+
+    loadLiveDashboardData();
   </script>
 </body>
 </html>

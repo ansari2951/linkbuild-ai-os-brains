@@ -1,0 +1,76 @@
+{
+    "Technology": [
+        "Software",
+        "Artificial Intelligence",
+        "Cybersecurity",
+        "Cloud Computing",
+        "Gadgets",
+        "Mobile Technology",
+        "Web Development"
+    ],
+    "Business": [
+        "Entrepreneurship",
+        "Startups",
+        "Management",
+        "Small Business",
+        "Leadership",
+        "Business Strategy"
+    ],
+    "Marketing": [
+        "Digital Marketing",
+        "SEO",
+        "Link Building",
+        "Content Marketing",
+        "Social Media Marketing",
+        "Email Marketing"
+    ],
+    "Finance": [
+        "Personal Finance",
+        "Investing",
+        "Banking",
+        "Insurance",
+        "Accounting",
+        "Fintech"
+    ],
+    "Health": [
+        "Healthcare",
+        "Fitness",
+        "Nutrition",
+        "Mental Wellness",
+        "Medical Technology"
+    ],
+    "Lifestyle": [
+        "Home Improvement",
+        "Fashion",
+        "Beauty",
+        "Food",
+        "Parenting",
+        "Relationships"
+    ],
+    "Travel": [
+        "Tourism",
+        "Hotels",
+        "Travel Guides",
+        "Adventure Travel",
+        "Luxury Travel"
+    ],
+    "Education": [
+        "Online Learning",
+        "Higher Education",
+        "Career Development",
+        "EdTech",
+        "Student Resources"
+    ],
+    "Real Estate": [
+        "Property Investment",
+        "Residential Real Estate",
+        "Commercial Real Estate",
+        "Property Management"
+    ],
+    "Automotive": [
+        "Cars",
+        "Electric Vehicles",
+        "Auto Repair",
+        "Car Accessories"
+    ]
+}

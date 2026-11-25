@@ -1,0 +1,8 @@
+{
+    "enabled": true,
+    "frequency": "interval",
+    "interval_hours": 6,
+    "run_at": "02:00",
+    "last_run": null,
+    "next_run": "2026-11-26T06:03:56"
+}

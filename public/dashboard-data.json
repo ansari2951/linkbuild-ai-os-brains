@@ -1,0 +1,243 @@
+{
+  "generated_at": "2026-11-25T19:08:13.502858+00:00",
+  "system": {
+    "name": "LINKBUILD AI OS Brains",
+    "version": "2.6 Cloud 24/7",
+    "central_brain_available_scripts": 13,
+    "central_brain_total_scripts": 13,
+    "central_brain_missing_scripts": 0,
+    "registered_brains": 6,
+    "connected_brains": 6,
+    "heartbeat": {
+      "timestamp": "2026-11-25T19:04:11.802931+00:00",
+      "status": "HEALTHY",
+      "pid": 336,
+      "stats": {
+        "last_completed_cycle": 1
+      }
+    },
+    "tasks_logged": 3
+  },
+  "metrics": {
+    "seo_total": 12,
+    "seo_completed": 12,
+    "seo_failed": 0,
+    "verified_emails": 13,
+    "total_emails": 13,
+    "keyword_clusters": 4,
+    "content_gaps": 1,
+    "publishers_researched": 5,
+    "crm_publishers": 5,
+    "outreach_drafts": 6,
+    "personalized_drafts": 6,
+    "classified_replies": 2,
+    "negotiations": 3,
+    "client_prospects": 3,
+    "orders": 2,
+    "backlinks_checked": 2,
+    "competitors": 4
+  },
+  "seo_modules": [
+    {
+      "module": "Site Audit",
+      "website": "https://example.com",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Website Crawler",
+      "website": "https://example.com",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Image Intelligence",
+      "website": "https://example.com",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Indexing Intelligence",
+      "website": "https://example.com",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Internal Link Analysis",
+      "website": "https://example.com",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Core Web Vitals",
+      "website": "https://example.com",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Redirect Analysis",
+      "website": "https://example.com",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Schema Analysis",
+      "website": "https://example.com",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Keyword Intelligence",
+      "website": "",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Competitor Intelligence",
+      "website": "",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Content Gap Analysis",
+      "website": "",
+      "status": "COMPLETED"
+    },
+    {
+      "module": "Keyword Clustering",
+      "website": "",
+      "status": "COMPLETED"
+    }
+  ],
+  "latest_seo_run_time": "2026-11-23T18:15:01.167042",
+  "publishers": [
+    {
+      "url": "https://www.thespruce.com/",
+      "title": "The Spruce: Make Your Best Home",
+      "relevance_score": 100,
+      "status": "inspected",
+      "contact_pages": [
+        "https://www.thespruce.com/about-us-4776800",
+        "https://www.thespruce.com/about-us-4776800#toc-our-team"
+      ]
+    },
+    {
+      "url": "https://www.bhg.com/",
+      "title": "Better Homes & Gardens: Fresh Takes on Home, Garden & Food",
+      "relevance_score": 100,
+      "status": "inspected",
+      "contact_pages": [
+        "https://www.bhg.com/about-better-homes-and-gardens-5525299#toc-contact-us",
+        "https://www.bhg.com/about-better-homes-and-gardens-5525299"
+      ]
+    },
+    {
+      "url": "https://www.bobvila.com/",
+      "title": "Bob Vila - Home Improvement, Home Repair, & Home Renovation",
+      "relevance_score": 100,
+      "status": "inspected",
+      "contact_pages": [
+        "https://www.bobvila.com/about/",
+        "https://www.bobvila.com/contacts/"
+      ]
+    },
+    {
+      "url": "https://www.familyhandyman.com/",
+      "title": "The Family Handyman | Do it Yourself Home Improvement: Home Repair",
+      "relevance_score": 100,
+      "status": "inspected",
+      "contact_pages": [
+        "https://www.familyhandyman.com/about-the-family-handyman/",
+        "https://www.familyhandyman.com/contact-us/"
+      ]
+    },
+    {
+      "url": "https://www.thisoldhouse.com/",
+      "title": "Home Improvement and Remodeling  - This Old House Play Play Play Play Play",
+      "relevance_score": 100,
+      "status": "inspected",
+      "contact_pages": [
+        "https://www.thisoldhouse.com/this-old-house/about-this-old-house",
+        "https://www.thisoldhouse.com/pages/contact-us"
+      ]
+    }
+  ],
+  "outreach_highlights": [
+    {
+      "email": "press@thespruce.com",
+      "website": "thespruce.com",
+      "contact_type": "Press / PR",
+      "priority": "Medium",
+      "subject": "Editorial Collaboration Opportunity for thespruce.com",
+      "approval_status": "Pending Review"
+    },
+    {
+      "email": "bhgeditor@people.inc",
+      "website": "bhg.com",
+      "contact_type": "Editor",
+      "priority": "High",
+      "subject": "Guest Article Contribution for bhg.com",
+      "approval_status": "Pending Review"
+    },
+    {
+      "email": "bhg.press@people.inc",
+      "website": "bhg.com",
+      "contact_type": "Press / PR",
+      "priority": "Medium",
+      "subject": "Editorial Collaboration Opportunity for bhg.com",
+      "approval_status": "Pending Review"
+    },
+    {
+      "email": "pr@recurrent.io",
+      "website": "bobvila.com",
+      "contact_type": "Press / PR",
+      "priority": "Medium",
+      "subject": "Editorial Collaboration Opportunity for bobvila.com",
+      "approval_status": "Pending Review"
+    },
+    {
+      "email": "advertising@bobvila.com",
+      "website": "bobvila.com",
+      "contact_type": "Advertising",
+      "priority": "Medium",
+      "subject": "Partnership Inquiry for bobvila.com",
+      "approval_status": "Pending Review"
+    },
+    {
+      "email": "advertising@trustedmediabrands.com",
+      "website": "familyhandyman.com",
+      "contact_type": "Advertising",
+      "priority": "Medium",
+      "subject": "Partnership Inquiry for familyhandyman.com",
+      "approval_status": "Pending Review"
+    }
+  ],
+  "brains": [
+    {
+      "id": "publisher_research",
+      "name": "Publisher Research Brain",
+      "department": "publisher",
+      "status": "connected"
+    },
+    {
+      "id": "publisher_outreach",
+      "name": "Publisher Outreach Brain",
+      "department": "publisher",
+      "status": "connected"
+    },
+    {
+      "id": "publisher_deals",
+      "name": "Publisher Deal Brain",
+      "department": "publisher",
+      "status": "connected"
+    },
+    {
+      "id": "client_research",
+      "name": "Client Research Brain",
+      "department": "client",
+      "status": "connected"
+    },
+    {
+      "id": "client_outreach",
+      "name": "Client Outreach Brain",
+      "department": "client",
+      "status": "connected"
+    },
+    {
+      "id": "email_intelligence",
+      "name": "Email Intelligence Brain",
+      "department": "email",
+      "status": "connected"
+    }
+  ]
+}

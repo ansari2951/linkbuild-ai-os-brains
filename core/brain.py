@@ -15,7 +15,7 @@ AGENTS = {
     "contact_intelligence": "agents/email/extractor/intelligence.py",
     "outreach_generator": "agents/email/extractor/outreach_generator.py",
     "approval_manager": "agents/email/extractor/approval_manager.py",
-    "email_sender": "agents/email/extractor/sender.py",
+    "email_sender": "agents/email/sender/sender.py",
     "outreach_personalizer": "agents/email/personalizer/personalizer.py",
     "reply_detector": "agents/email/reply_detector/reply_detector.py",
     "negotiation": "agents/email/negotiation/negotiation.py",

@@ -15,7 +15,7 @@ def run_gemini_task(input_data):
 
     return ai_router.generate(
         prompt=prompt,
-        provider="gemini"
+        provider="auto"
     )
 
 

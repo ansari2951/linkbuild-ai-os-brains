@@ -16,8 +16,25 @@ SEND_EMAILS = os.getenv("SEND_EMAILS", "false").lower() == "true"
 # SMTP settings must be configured as environment variables
 SMTP_HOST = os.getenv("SMTP_HOST")
 SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
-SMTP_USER = os.getenv("SMTP_USER")
+SMTP_USER = os.getenv("SMTP_USER") or os.getenv("SMTP_USERNAME")
 SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
+APPROVAL_FILE = DATA_DIR / "approval_decisions.csv"
+
+
+def load_approved_overrides():
+    overrides = {}
+    if not APPROVAL_FILE.exists():
+        return overrides
+    try:
+        with open(APPROVAL_FILE, "r", newline="", encoding="utf-8-sig") as file:
+            for row in csv.DictReader(file):
+                email = (row.get("email") or "").strip().lower()
+                decision = (row.get("decision") or "").strip().upper()
+                if email and decision:
+                    overrides[email] = decision
+    except (OSError, csv.Error):
+        pass
+    return overrides
 
 
 def send_email(to_email, subject, body):
@@ -58,12 +75,16 @@ def main():
             print("Required CSV columns are missing.")
             return
 
+        approved_overrides = load_approved_overrides()
+
         for draft in reader:
             email = (draft.get("email") or "").strip()
             subject = (draft.get("subject") or "").strip()
             body = (draft.get("body") or "").strip()
             status = (
-                draft.get("approval_status") or ""
+                approved_overrides.get(email.lower())
+                or draft.get("approval_status")
+                or ""
             ).strip().upper()
 
             if status != "APPROVED":

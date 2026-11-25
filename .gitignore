@@ -1,6 +1,7 @@
 # Environment secrets
 .env
 .env.*
+.env.local
 !.env.example
 
 # Python virtual environment
@@ -36,5 +37,3 @@ Thumbs.db
 node_modules/
 dist/
 build/
-
-.vercel

@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-11-23T14:17:48.206056+00:00",
-  "status": "STOPPED",
-  "pid": 20080,
+  "timestamp": "2026-11-25T19:04:11.802931+00:00",
+  "status": "HEALTHY",
+  "pid": 336,
   "stats": {
-    "final_cycle": 2
+    "last_completed_cycle": 1
   }
 }

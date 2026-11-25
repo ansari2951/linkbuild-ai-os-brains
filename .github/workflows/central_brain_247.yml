@@ -7,16 +7,31 @@ on:
   workflow_dispatch:
     # Allows manual trigger anytime from GitHub Actions tab
 
+permissions:
+  contents: write
+
 jobs:
   run-autonomous-brains:
     runs-on: ubuntu-latest
 
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GOOGLE_PAGESPEED_API_KEY: ${{ secrets.GOOGLE_PAGESPEED_API_KEY }}
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_USERNAME: ${{ secrets.SMTP_USER }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      SEND_EMAILS: ${{ secrets.SEND_EMAILS || 'false' }}
+
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -38,18 +53,45 @@ jobs:
         run: |
           python run_seo_pipeline.py --mode manual
 
-      - name: Execute Master Brain Agents
+      - name: Execute All 6 Master Brain Agents
         run: |
           python -c "
           from core.master_brain.main import process_command
-          process_command('Find publisher websites')
-          process_command('publisher outreach')
-          process_command('Find client leads')
+          for cmd in [
+              'Find publisher websites for home improvement in US',
+              'publisher outreach',
+              'negotiation',
+              'Find client leads',
+              'client outreach',
+              'check inbox',
+          ]:
+              res = process_command(cmd)
+              assert res is not None, f'Routing failed for {cmd}'
           "
+
+      - name: Run Full 24/7 Operations Sweep & Sync Dashboard JSON
+        run: |
+          python run_247_daemon.py --cycles 1 --interval 1 --sweep
 
       - name: Commit & Push Intelligence Reports
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): 24/7 autonomous intelligence run update" && git push)
+          git add data/ public/dashboard-data.json
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore(auto): 24/7 cloud intelligence run update"
+            git pull --rebase origin main || true
+            git push origin main
+          fi
+
+      - name: Trigger Optional Vercel Production Redeploy (Hook)
+        if: ${{ secrets.VERCEL_DEPLOY_HOOK_URL != '' }}
+        run: |
+          curl -fsSL -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
+
+      - name: Trigger Optional Vercel Production Redeploy (CLI Token)
+        if: ${{ secrets.VERCEL_TOKEN != '' }}
+        run: |
+          npx --yes vercel deploy ./public --prod --yes --token="${{ secrets.VERCEL_TOKEN }}"
