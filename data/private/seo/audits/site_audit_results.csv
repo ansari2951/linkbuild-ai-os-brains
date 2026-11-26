@@ -1,2 +1,2 @@
 url,http_status,title,meta_description,h1_count,image_count,images_without_alt,canonical,robots_meta,audit_status,issues,checked_at
-https://example.com,200,Example Domain,,0,0,0,,,COMPLETED,Missing meta description; Missing H1; Missing canonical tag,2026-11-26T07:08:33.708729+00:00
+https://example.com,200,Example Domain,,0,0,0,,,COMPLETED,Missing meta description; Missing H1; Missing canonical tag,2026-11-26T13:10:32.064619+00:00
