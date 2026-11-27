@@ -1,3 +1,3 @@
 ﻿cls,fcp_ms,field_cls,field_inp,field_lcp,interactive_ms,lcp_ms,note,origin_field_metrics,performance_score,speed_index_ms,strategy,tbt_ms,url
-0.0,33.97,,,,34.81,34.81,"Estimated via direct HTTP response timing (TTFB: 33.97ms, Total: 34.81ms, Size: 577B)",False,0.95,34.81,mobile,0.0,https://example.com
-0.0,30.16,,,,30.88,30.88,"Estimated via direct HTTP response timing (TTFB: 30.16ms, Total: 30.88ms, Size: 577B)",False,0.95,30.88,desktop,0.0,https://example.com
+0.0,35.43,,,,36.14,36.14,"Estimated via direct HTTP response timing (TTFB: 35.43ms, Total: 36.14ms, Size: 577B)",False,0.95,36.14,mobile,0.0,https://example.com
+0.0,29.68,,,,30.38,30.38,"Estimated via direct HTTP response timing (TTFB: 29.68ms, Total: 30.38ms, Size: 577B)",False,0.95,30.38,desktop,0.0,https://example.com

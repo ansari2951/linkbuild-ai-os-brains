@@ -47,3 +47,8 @@
 {"timestamp": "2026-11-27T13:06:30.177820+00:00", "event": "SYSTEM_STATUS_CHECK", "details": {"available_agents": 13, "total_agents": 13}}
 {"timestamp": "2026-11-27T13:06:30.351577+00:00", "event": "SYSTEM_STATUS_CHECK", "details": {"available_agents": 13, "total_agents": 13}}
 {"timestamp": "2026-11-27T13:06:30.368973+00:00", "event": "SYSTEM_STATUS_CHECK", "details": {"available_agents": 13, "total_agents": 13}}
+{"timestamp": "2026-11-27T18:52:51.384955+00:00", "event": "SYSTEM_STATUS_CHECK", "details": {"available_agents": 13, "total_agents": 13}}
+{"timestamp": "2026-11-27T18:52:51.385165+00:00", "event": "SYSTEM_STATUS_CHECK", "details": {"available_agents": 13, "total_agents": 13}}
+{"timestamp": "2026-11-27T18:52:55.486565+00:00", "event": "SYSTEM_STATUS_CHECK", "details": {"available_agents": 13, "total_agents": 13}}
+{"timestamp": "2026-11-27T18:52:58.385934+00:00", "event": "SYSTEM_STATUS_CHECK", "details": {"available_agents": 13, "total_agents": 13}}
+{"timestamp": "2026-11-27T18:52:58.388466+00:00", "event": "SYSTEM_STATUS_CHECK", "details": {"available_agents": 13, "total_agents": 13}}
