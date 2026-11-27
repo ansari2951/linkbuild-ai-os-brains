@@ -1,3 +1,3 @@
 order_id,client_name,publisher_domain,article_title,target_url,anchor_text,content_type,deadline,status,published_url,notes,updated_at
-ORD-1001,Growth Marketing Co,thespruce.com,10 Smart Home Storage Hacks,https://example.com,home organization guide,Guest Post,2026-12-15,IN_PROGRESS,,Draft submitted to editor,2026-11-27T07:09:06.802238+00:00
-ORD-1002,TechSaaS App,bobvila.com,Modern DIY Monitoring Tools,https://example.com,smart home tools,Link Insertion,2026-12-20,CONTENT_READY,,Waiting for publisher slot,2026-11-27T07:09:06.802243+00:00
+ORD-1001,Growth Marketing Co,thespruce.com,10 Smart Home Storage Hacks,https://example.com,home organization guide,Guest Post,2026-12-15,IN_PROGRESS,,Draft submitted to editor,2026-11-27T13:06:30.350440+00:00
+ORD-1002,TechSaaS App,bobvila.com,Modern DIY Monitoring Tools,https://example.com,smart home tools,Link Insertion,2026-12-20,CONTENT_READY,,Waiting for publisher slot,2026-11-27T13:06:30.350448+00:00
