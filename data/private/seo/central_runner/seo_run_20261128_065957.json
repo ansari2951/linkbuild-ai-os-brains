@@ -1,0 +1,110 @@
+{
+    "project": "LINKBUILD AI OS",
+    "run_time": "2026-11-28T06:59:57.682753",
+    "websites": [
+        "https://example.com"
+    ],
+    "total_modules": 12,
+    "completed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "disabled": 0,
+    "results": [
+        {
+            "module": "Site Audit",
+            "website": "https://example.com",
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Enter website URLs separated by commas: Audited 1 websites.\nResults saved to: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/audits/site_audit_results.csv\n",
+            "error": ""
+        },
+        {
+            "module": "Website Crawler",
+            "website": "https://example.com",
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Enter website URL: Saved 1 page records.\nOutput: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/crawler/crawl_results.csv\nWebsite crawling completed.\n",
+            "error": ""
+        },
+        {
+            "module": "Image Intelligence",
+            "website": "https://example.com",
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Enter website page URL: No images found. Empty report saved.\n\nImage Audit Summary\nTotal images: 0\nMissing ALT: 0\nEmpty ALT: 0\nMissing dimensions: 0\n",
+            "error": ""
+        },
+        {
+            "module": "Indexing Intelligence",
+            "website": "https://example.com",
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Enter website URL: Indexing analysis saved.\nReport: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/indexing/indexing_report.csv\nSitemap URLs: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/indexing/sitemap_urls.csv\n",
+            "error": ""
+        },
+        {
+            "module": "Internal Link Analysis",
+            "website": "https://example.com",
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Enter website page URL: No links found. Empty report saved.\n\nInternal Link Summary\nTotal links: 0\nInternal links: 0\nExternal links: 0\nEmpty anchor text: 0\nGeneric anchor text: 0\n",
+            "error": ""
+        },
+        {
+            "module": "Core Web Vitals",
+            "website": "https://example.com",
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Enter website URL: Performance report saved: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/performance/core_web_vitals.csv\nmobile Performance Score: 0.95 Error: None\ndesktop Performance Score: 0.95 Error: None\n",
+            "error": ""
+        },
+        {
+            "module": "Redirect Analysis",
+            "website": "https://example.com",
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Enter URL to analyze: Redirect report saved: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/redirects/redirect_results.csv\n\nRedirect Analysis\nFinal URL: https://example.com\nRedirect Count: 0\nRedirect Types: \nLoop Detected: False\n",
+            "error": ""
+        },
+        {
+            "module": "Schema Analysis",
+            "website": "https://example.com",
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Enter website URL: Schema analysis saved: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/schema/schema_results.csv\n\nDetected Schema Types:\nNo JSON-LD schema found.\n",
+            "error": ""
+        },
+        {
+            "module": "Keyword Intelligence",
+            "website": null,
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Analyzed 20 keywords.\nResults saved to: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/keyword_analysis.csv\nKeywords needing metrics: 20\nKeywords with invalid metrics: 0\n",
+            "error": ""
+        },
+        {
+            "module": "Competitor Intelligence",
+            "website": null,
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Analyzed 4 competitor records.\nResults saved to: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/competitors/competitor_analysis.csv\n",
+            "error": ""
+        },
+        {
+            "module": "Content Gap Analysis",
+            "website": null,
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Content gap report saved: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/content_gap/content_gap_report.csv\n\nContent Gap Summary\nYour keywords: 1\nCompetitor keywords: 2\nMissing keyword opportunities: 1\nHigh priority gaps: 0\n",
+            "error": ""
+        },
+        {
+            "module": "Keyword Clustering",
+            "website": null,
+            "status": "COMPLETED",
+            "return_code": 0,
+            "output": "Keyword clusters saved: /home/runner/work/linkbuild-ai-os-brains/linkbuild-ai-os-brains/data/private/seo/keyword_clustering/keyword_clusters.csv\n\nKeyword Clustering Summary\nTotal keywords: 6\nTotal clusters: 4\n",
+            "error": ""
+        }
+    ]
+}

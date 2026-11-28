@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T18:52:58.389569+00:00",
+  "generated_at": "2026-11-28T07:00:01.135576+00:00",
   "system": {
     "name": "LINKBUILD AI OS Brains",
     "version": "2.6 Cloud 24/7",
@@ -9,9 +9,9 @@
     "registered_brains": 6,
     "connected_brains": 6,
     "heartbeat": {
-      "timestamp": "2026-11-27T18:52:58.388050+00:00",
+      "timestamp": "2026-11-28T07:00:01.134369+00:00",
       "status": "HEALTHY",
-      "pid": 2786,
+      "pid": 2290,
       "stats": {
         "last_completed_cycle": 1
       }
@@ -99,7 +99,7 @@
       "status": "COMPLETED"
     }
   ],
-  "latest_seo_run_time": "2026-11-27T18:52:58.155723",
+  "latest_seo_run_time": "2026-11-28T07:00:00.894428",
   "publishers": [
     {
       "url": "https://www.thespruce.com/",
